@@ -25,6 +25,8 @@ public class Order {
 	@Column(name="orderId")
 	private Long  orderId;
 
+	
+	//need 
 	@ManyToMany(fetch=FetchType.LAZY)
 	@JoinColumn(name="productId")
 	private List<Product> productId;
